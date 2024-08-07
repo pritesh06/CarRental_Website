@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/fevicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>CAR Rental</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftside_heropage">
+            <header>
+                <nav>
+                    <div class="nav_logolinks">
+                        <div class="logo">
+                            <img src="images/logo_v4.png">
+                        </div>
+                        <ul>
+                            <li style="color: #FE5A40;">Home</li>
+                            <li><a href="VechicalModel.html">Vehicle Models</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Testimonials.html">Testimonials</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_links">
+                        <ul>
+                            <li class="linkforsign"><a href="#">Sign In</a></li>
+                            <li class="special_link btn"><a class="" href="#" style="color: white;">Register</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <contant>
+                <div class="hero_container">
+                    <div class="leftside_heropage">
+                        <div class="hero_text">
+                            <h3>Plan your trip now</h3>
+                            <h2>Save <span class="diff_color">big</span> with our<br>car rental</h2>
+                            <p style="color: #817f91;">To contribute to positive change and achieve our sustainability
+                                goals with many
+                                extraordinary
+                            </p>
+                        </div>
+                        <div class="btns">
+                            <button><a class="btn" href="#"><b>Book Ride</b> <i
+                                        class="fa-solid fa-circle-check"></i></a></button>
+                            <button><a class="btn_sec" href="#">Learn More <i
+                                        class="fa-solid fa-caret-right"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+            </contant>
+        </div>
+        <div class="rightside_heropage">
+            <!-- <img src="images/banner_image.png" alt="banner"> -->
+            <div class="rightside_hero">
+                <div class="hero_carimg">
+                    <img src="images/banner_car.png" alt="car-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="booking_section">
+        <div class="booking_box">
+            <div class="booking_head">
+                <h1>Book a car</h1>
+                <p class="box_label"><b>SAVE 15%</b> if you prepay your booking</p>
+                <span class="fold"></span>
+            </div>
+            <div class="booking_mid">
+                <div class="car_type">
+                    <label for="car_type"><i class="fa-solid fa-car" style="color: #ff5130;"></i> Select Your Car
+                        Type</label>
+                    <br>
+                    <select id="car_type" name="car_type">
+                        <option value="">Select Your Car Type</option>
+                        <option value="Teruzo">Teruzo</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Creata">Creata</option>
+                        <option value="BMW_320">BMW 320</option>
+                        <option value="Toyota_Camry">Toyota Camry</option>
+                        <option value="Audi_A1_S">Audi A1 S</option>
+                        <option value="Innova">Innova Crysta</option>
+                    </select>
+                </div>
+                <div class="pick_up">
+                    <label for="pick_up"><i class="fa-solid fa-location-dot" style="color: #ff5130;"></i>
+                        Pick-up</label>
+                    <br>
+                    <select id="pick_up" name="pick_up">
+                        <option value="Surat">Surat</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Nadiad">Nadiad</option>
+                    </select>
+                </div>
+                <div class="Drop_of">
+                    <label for="Drop_of"><i class="fa-solid fa-location-dot" style="color: #ff5130;"></i>
+                        Drop-of</label>
+                    <br>
+                    <select id="Drop_of" name="Drop_of">
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Vadodra">Vadodra</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+                </div>
+            </div>
+            <div class="booking_end">
+                <div class="pick_up_date">
+                    <label for="pick_up_date"><i class="fa-solid fa-calendar-days" style="color: #ff5130;"></i>
+                        Pick-up</label>
+                    <br>
+                    <input type="date" id="pick_up_date" name="pick_up_date" value="2020-07-20">
+                    <label for="time"></label>
+                    <select class="time" id="pick_up_time" name="pick_up_time">
+                        <option value="12:00_AM">12:00 AM</option>
+                        <option value="12:30_AM">12:30 AM</option>
+                        <option value="1:00_AM">1:00 AM</option>
+                        <option value="1:30_AM">1:30 AM</option>
+                        <option value="2:00_AM">2:00 AM</option>
+                        <option value="2:20_AM">2:30 AM</option>
+                        <option value="3:00_AM">3:00 AM</option>
+                        <option value="3:30_AM">3:30 AM</option>
+                        <option value="4:00_AM">4:00 AM</option>
+                        <option value="4:30_AM">4:30 AM</option>
+                        <option value="5:00_AM">5:00 AM</option>
+                        <option value="5:30_AM">5:30 AM</option>
+                        <option value="6:00_AM">6:00 AM</option>
+                        <option value="6:30_AM">6:30 AM</option>
+                        <option value="7:00_AM">7:00 AM</option>
+                        <option value="7:30_AM">7:30 AM</option>
+                        <option value="8:00_AM">8:00 AM</option>
+                        <option value="8:30_AM">8:30 AM</option>
+                        <option value="9:00_AM">9:00 AM</option>
+                        <option value="9:30_AM">9:30 AM</option>
+                        <option value="10:00_AM">10:00 AM</option>
+                        <option value="10:30_AM">10:30 AM</option>
+                        <option value="11:00_AM">11:00 AM</option>
+                        <option value="11:30_AM">11:30 AM</option>
+                        <option value="12:00_PM">12:00 PM</option>
+                        <option value="12:30_PM">12:30 PM</option>
+                        <option value="1:00_PM">1:00 AM</option>
+                        <option value="1:30_PM">1:30 PM</option>
+                        <option value="2:00_PM">2:00 PM</option>
+                        <option value="2:30_PM">2:30 PM</option>
+                        <option value="3:00_PM">3:00 PM</option>
+                        <option value="3:30_PM">3:30 PM</option>
+                        <option value="4:00_PM">4:00 PM</option>
+                        <option value="4:30_PM">4:30 PM</option>
+                        <option value="5:00_PM">5:00 PM</option>
+                        <option value="5:30_PM">5:30 PM</option>
+                        <option value="6:00_PM">6:00 PM</option>
+                        <option value="6:30_PM">6:30 PM</option>
+                        <option value="7:00_PM">7:00 PM</option>
+                        <option value="7:30_AM">7:30 AM</option>
+                        <option value="8:00_AM">8:00 AM</option>
+                        <option value="8:30_PM">8:30 PM</option>
+                        <option value="9:00_PM">9:00 PM</option>
+                        <option value="9:30_PM">9:30 PM</option>
+                        <option value="10:00_PM">10:00 PM</option>
+                        <option value="10:30_PM">10:30 PM</option>
+                        <option value="11:00_PM">11:00 PM</option>
+                        <option value="11:30_PM">11:30 PM</option>
+                    </select>
+                </div>
+                <div class="Drop_of_date">
+                    <label for="Drop_of_date"><i class="fa-solid fa-calendar-days" style="color: #ff5130;"></i>
+                        Drop-of</label>
+                    <br>
+                    <input type="date" id="Drop_of_date" name="Drop_of_date" value="2020-07-20">
+                    <label for="time"></label>
+                    <select class="time" id="Drop_of_time" name="Drop_of_time">
+                        <option value="12:00_AM">12:00 AM</option>
+                        <option value="12:30_AM">12:30 AM</option>
+                        <option value="1:00_AM">1:00 AM</option>
+                        <option value="1:30_AM">1:30 AM</option>
+                        <option value="2:00_AM">2:00 AM</option>
+                        <option value="2:20_AM">2:30 AM</option>
+                        <option value="3:00_AM">3:00 AM</option>
+                        <option value="3:30_AM">3:30 AM</option>
+                        <option value="4:00_AM">4:00 AM</option>
+                        <option value="4:30_AM">4:30 AM</option>
+                        <option value="5:00_AM">5:00 AM</option>
+                        <option value="5:30_AM">5:30 AM</option>
+                        <option value="6:00_AM">6:00 AM</option>
+                        <option value="6:30_AM">6:30 AM</option>
+                        <option value="7:00_AM">7:00 AM</option>
+                        <option value="7:30_AM">7:30 AM</option>
+                        <option value="8:00_AM">8:00 AM</option>
+                        <option value="8:30_AM">8:30 AM</option>
+                        <option value="9:00_AM">9:00 AM</option>
+                        <option value="9:30_AM">9:30 AM</option>
+                        <option value="10:00_AM">10:00 AM</option>
+                        <option value="10:30_AM">10:30 AM</option>
+                        <option value="11:00_AM">11:00 AM</option>
+                        <option value="11:30_AM">11:30 AM</option>
+                        <option value="12:00_PM">12:00 PM</option>
+                        <option value="12:30_PM">12:30 PM</option>
+                        <option value="1:00_PM">1:00 AM</option>
+                        <option value="1:30_PM">1:30 PM</option>
+                        <option value="2:00_PM">2:00 PM</option>
+                        <option value="2:30_PM">2:30 PM</option>
+                        <option value="3:00_PM">3:00 PM</option>
+                        <option value="3:30_PM">3:30 PM</option>
+                        <option value="4:00_PM">4:00 PM</option>
+                        <option value="4:30_PM">4:30 PM</option>
+                        <option value="5:00_PM">5:00 PM</option>
+                        <option value="5:30_PM">5:30 PM</option>
+                        <option value="6:00_PM">6:00 PM</option>
+                        <option value="6:30_PM">6:30 PM</option>
+                        <option value="7:00_PM">7:00 PM</option>
+                        <option value="7:30_AM">7:30 AM</option>
+                        <option value="8:00_AM">8:00 AM</option>
+                        <option value="8:30_PM">8:30 PM</option>
+                        <option value="9:00_PM">9:00 PM</option>
+                        <option value="9:30_PM">9:30 PM</option>
+                        <option value="10:00_PM">10:00 PM</option>
+                        <option value="10:30_PM">10:30 PM</option>
+                        <option value="11:00_PM">11:00 PM</option>
+                        <option value="11:30_PM">11:30 PM</option>
+                    </select>
+                </div>
+                <div class="special_link submit">
+                    <button class="btn" type="submit">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="planyourtrip_section">
+        <div class="trip_section_text">
+            <h3>Plan your trip now</h3>
+            <h1>Quick & easy car rental</h1>
+        </div>
+        <div class="mainpartoftrip_section">
+            <div class="box1">
+                <a href="#">
+                    <img src="images/iconbox-image_01.png" alt="icon">
+                    <h3>Select Car</h3>
+                    <p>To contribute positive change and achive our sustainbility goals with many extraordinary</p>
+                </a>
+            </div>
+            <div class="border">
+                <img src="images/border.png" alt="">
+            </div>
+            <div class="box1">
+                <a href="#">
+                    <img src="images/iconbox-image_02.png" alt="icon">
+                    <h3>Contanct Operator</h3>
+                    <p>To contribute positive change and achive our sustainbility goals with many extraordinary</p>
+                </a>
+            </div>
+            <div class="border">
+                <img src="images/border.png" alt="">
+            </div>
+            <div class="box1">
+                <a href="#">
+                    <img src="images/iconbox-image_03.png" alt="icon">
+                    <h3>Lest's Drive</h3>
+                    <p>To contribute positive change and achive our sustainbility goals with many extraordinary</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="whychooseus_section">
+        <div class="image_container">
+            <img src="images/display_car_image.png" alt="car_images">
+        </div>
+        <div class="wcs">
+            <div class="wcs_text1">
+                <h3>Why Choose Us</h3>
+                <h2>Best valued deals you will ever find</h2>
+                <p>Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so
+                    intention defective at convinced. Led income months itself and houses you.</p>
+                <div class="btns">
+                    <button><a class="btn" href="#"><b>Find Deals</b> <i
+                                class="fa-solid fa-caret-right"></i></a></button>
+                </div>
+            </div>
+            <div class="wcs_text2">
+                <div class="box">
+                    <div class="logo_img">
+                        <img src="images/drive.png" alt="car_img">
+                    </div>
+                <div class="box_text">
+                    <h3>Cross Country Drive</h3>
+                    <p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man
+                        children rejoiced.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="logo_img">
+                        <img src="images/price.png" alt="price_img">
+                    </div>
+                <div class="box_text">
+                    <h3>All inclusive pricing</h3>
+                    <p>Yet uncommonly his ten who diminution astonished. Demesne new manners savings staying had.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="logo_img">
+                        <img src="images/charge.png" alt="car_img">
+                    </div>
+                <div class="box_text">
+                    <h3>No hidden charges</h3>
+                    <p>Under folly balls death own point now men. Match way these she avoid see. She whose drift their
+                        fat off.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dldapp_banner_section">
+    <div class="dldapp_text">
+        <h1>Download our app to get most out of it</h1>
+        <p>Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
+        <div class="apppdld">
+            <img src="images/google-app-download-1.svg" alt="googal_app_dldlink">
+            <img src="images/ios-app-btn.svg" alt="ios_app_dldlink">
+        </div>
+    </div>
+    </section>
+    <footer>
+    <div class="footer_container">
+        <div class="foot_text">
+            <p>©2020 <B>Car Rental</B>. All Rights Reserved</p>
+        </div>
+        <div class="foot_linkicon">
+            <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+            <i class="fa-brands fa-youtube" style="color: #000000;"></i>
+            <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+            <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+        </div>
+    </div>
+    </footer>
+</body>
+
+</html>
